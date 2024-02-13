@@ -1,0 +1,47 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300&family=Righteous&display=swap');
+body {
+    background: lavender;
+    font-family: 'Poppins', sans-serif;
+}
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background-color: rgb(193, 234, 220);
+    border: 1px solid #e8f7e9;
+    border-radius: 20%;
+    font-weight: bold;
+
+}
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(208, 200, 216);
+    border-radius: 10px;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+ font-size: 3em;
+ text-align: center;
+ background-color: rgb(197, 192, 185);
+ border-radius: 10px;
+}
+.mytabs input[type="radio"]:checked +label + .tab {
+    display: block;
+}
+
+/* this option doesn't work for chorme webbrowser 
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}*/
